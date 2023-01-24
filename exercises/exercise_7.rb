@@ -10,3 +10,8 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+puts Store.all.count
+@test = $stdin.gets.chomp
+puts @test
+store = Store.create(name:@test)
+puts store.errors.full_messages
